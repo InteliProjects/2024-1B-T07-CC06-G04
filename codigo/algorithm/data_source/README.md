@@ -1,0 +1,1 @@
+Use essa pasta para adicionar seus arquivos para que eles possam ser usados para a otimização dos algoritmos, os arquivos previamente usados aqui foram excluídos para manter a segurança de dados da aplicação.

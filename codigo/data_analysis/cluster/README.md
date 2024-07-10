@@ -1,0 +1,1 @@
+Coloque aqui seus arquivos do processo de clusterização. Os arquivos que estavam aqui previamente foram excluídos por questão de segurança de dados.

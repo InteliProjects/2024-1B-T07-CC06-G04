@@ -1,0 +1,194 @@
+{
+	"info": {
+		"_postman_id": "2fd5bf70-1e0e-46db-a1dc-3c1e476f49a5",
+		"name": "Aegis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26797045"
+	},
+	"item": [
+		{
+			"name": "get-root",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upload-csv",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"contentType": "",
+							"type": "file",
+							"src": "/C:/Users/Inteli/Documents/2024-1B-T07-CC06-G04/codigo/data_analysis/data_source/amostra_total_tratado.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/upload-csv",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"upload-csv"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cluster-csv",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/cluster-csv?n_clusters_primary=50&n_clusters_secondary=22",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"cluster-csv"
+					],
+					"query": [
+						{
+							"key": "n_clusters_primary",
+							"value": "50"
+						},
+						{
+							"key": "n_clusters_secondary",
+							"value": "22"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "run-aco",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/run-aco?num_ants=50&alpha=1.0&beta=1.0&evaporation_rate=0.5&iterations=1000",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"run-aco"
+					],
+					"query": [
+						{
+							"key": "num_ants",
+							"value": "50"
+						},
+						{
+							"key": "alpha",
+							"value": "1.0"
+						},
+						{
+							"key": "beta",
+							"value": "1.0"
+						},
+						{
+							"key": "evaporation_rate",
+							"value": "0.5"
+						},
+						{
+							"key": "iterations",
+							"value": "1000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-results-by-id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/results/a3dcbd29-0f78-471a-8ca8-875e277c8e29",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"results",
+						"a3dcbd29-0f78-471a-8ca8-875e277c8e29"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-all-results",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/results",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"results"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
